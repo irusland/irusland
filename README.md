@@ -1,2 +1,2 @@
 ###  :)
-![cloud](./cloud.png)
+![cloud](./tag_cloud.png)
