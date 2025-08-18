@@ -1,4 +1,5 @@
-![gif_cloud](./tag_cloud.gif)
+# 🌐 irusland
 
-[ʕ•ᴥ•ʔ](https://folio.procreate.com/irusland)
-[🐅](https://irusland.github.io)
+[![Website Preview](https://via.placeholder.com/800x400/0066cc/ffffff?text=Click+to+Visit+My+Website)](https://irusland.github.io)
+
+[**🚀 Visit irusland.github.io →**](https://irusland.github.io)
