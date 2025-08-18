@@ -1,8 +1,7 @@
 # 🌐 irusland
 
-![](https://irusland.github.io/preview-generator.html?png=1)
+[![Website Preview](https://irusland.github.io/preview-generator.html?auto=1)](https://irusland.github.io)
 
-[**🚀 Visit irusland.github.io →**](https://irusland.github.io)
-
+[**🚀 Visit irusland.github.io →**](https://irusland.github.io) | [**🖼️ Auto-Serve PNG →**](https://irusland.github.io/preview-generator.html)
 
 ![](https://img.shields.io/website?url=https://irusland.github.io&style=for-the-badge)
