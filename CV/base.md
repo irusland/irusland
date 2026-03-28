@@ -109,7 +109,6 @@ Quality / Engineering Excellence / Community
 
 Core metrics to keep in the CV
 
-Вот отдельным пулом цифры, которые стоит встраивать в резюме wherever relevant:
 - 120 teams
 - 2,000+ employees
 - 0% → 77% test coverage
@@ -133,7 +132,6 @@ Core metrics to keep in the CV
 
 Tech stack / keywords confirmed by experience
 
-Это можно держать как базу для skills section:
 - Python
 - Backend Architecture
 - Tech Leadership
