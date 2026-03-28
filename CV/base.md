@@ -2,7 +2,7 @@ Master bullets for base CV
 
 Leadership / Ownership / Delivery
 - Led end-to-end delivery of backend, AI, and ML platform products: from requirements gathering and architecture design to production rollout, monitoring, documentation, and post-launch evolution.
-- Acted as a de facto Tech Lead on critical initiatives, combining hands-on engineering with technical leadership: designed systems, wrote core implementation, coordinated contributors, aligned stakeholders, and drove rollout to production.
+- Owned Tech Lead responsibilities on critical initiatives, combining hands-on engineering with technical leadership: designed systems, wrote core implementation, coordinated contributors, aligned stakeholders, and drove rollout to production.
 - Took ownership of complex cross-functional initiatives involving backend, NLP/ML, analytics, infrastructure, telephony, product, and support teams, delivering production systems under tight timelines.
 - Transitioned from implementation-focused work to broader ownership of architecture, delivery planning, cross-team coordination, and operational launch of internal AI products.
 - Regularly identified weak points in platform and team processes, proposed systemic improvements, and influenced technical decisions beyond immediate task scope.
