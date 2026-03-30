@@ -171,4 +171,4 @@ RTF formatting rules:
 - Replace `<...>` placeholders with actual generated content
 - For bullet points use `\bullet  text\par` or prefix with `-  `
 - Subsection headers: `{\b **Subsection**\b0}\par`
-- Save the file as `CV/tailored.rtf`
+- Save the file as `CV/generated/[company]/[job-summary]-[current-date].rtf`
