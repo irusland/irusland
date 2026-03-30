@@ -2,7 +2,7 @@
 name: cv
 description: Tailors CV content from CV/base.md for a specific job vacancy. Use when the user wants to adapt their resume, generate targeted CV bullets, or customize their CV text for a job posting. Trigger phrases: "адаптируй резюме", "под вакансию", "tailored CV", "cv for job", "резюме под", "подготовь резюме".
 argument-hint: <job vacancy description or URL>
-allowed-tools: [Read]
+allowed-tools: [Read, WebFetch]
 ---
 
 # CV Tailor — Adapt resume for a specific job vacancy
@@ -11,13 +11,16 @@ The user wants to generate tailored content for their one-page CV.
 
 ## Input
 
-Job vacancy description (or URL): $ARGUMENTS
+Job vacancy description or URL: $ARGUMENTS
 
 ## Instructions
 
 1. Read the full `CV/base.md` from the repository using the Read tool.
-2. Carefully analyze the job vacancy from the arguments.
-3. Identify:
+2. Parse the input:
+   - If `$ARGUMENTS` starts with `http://` or `https://` — fetch the page with WebFetch and extract the job description text from it.
+   - Otherwise — use `$ARGUMENTS` directly as the job description.
+3. Carefully analyze the job vacancy text.
+4. Identify:
    - Key requirements and tech stack from the vacancy
    - Role level (IC / TL / Staff / Principal / Manager)
    - Domain (AI/ML, Backend, Platform, Infrastructure, etc.)
