@@ -2,7 +2,7 @@
 name: cv
 description: Tailors CV content from CV/base.md for a specific job vacancy. Use when the user wants to adapt their resume, generate targeted CV bullets, or customize their CV text for a job posting. Trigger phrases: "адаптируй резюме", "под вакансию", "tailored CV", "cv for job", "резюме под", "подготовь резюме".
 argument-hint: <job vacancy description or URL>
-allowed-tools: [Read, WebFetch]
+allowed-tools: [Read, WebFetch, Write]
 ---
 
 # CV Tailor — Adapt resume for a specific job vacancy
@@ -112,3 +112,63 @@ Pick the 4 most relevant categories and trim keywords to match vacancy language.
 - Keep total CV content to one page (be concise, cut weak bullets)
 - Prioritize quantified achievements over generic descriptions
 - Match vocabulary to the vacancy (mirror their terms where natural)
+
+---
+
+## RTF File Generation
+
+After generating all CV content, write it to `CV/generated/[company]/[job-summary]-[current-date].rtf` using the Write tool.
+
+Use this RTF template (fill in the generated content):
+
+```
+{\rtf1\ansi\ansicpg1252\deff0
+{\fonttbl{\f0\froman\fcharset0 Times New Roman;}{\f1\fswiss\fcharset0 Arial;}}
+{\colortbl;\red0\green0\blue0;\red80\green80\blue80;}
+\paperw12240\paperh15840\margl1440\margr1440\margt1080\margb1080
+\f1\fs20
+
+{\fs28\b Ruslan Sirazhetdinov\b0}\par
+{\fs18\cf2 <HEADER TAGLINE>\cf0}\par
+{\fs16 irusland@icloud.com | linkedin.com/in/irusland | github.com/irusland}\par
+\par
+
+{\fs20\b CORE IMPACT\b0}\par
+\par
+<CORE IMPACT BULLETS — one per \par, use \b...\b0 for bold metrics>\par
+\par
+
+{\fs20\b EXPERIENCE\b0}\par
+\par
+{\b Tech Lead @ Aviasales\b0  |  2024\endash Present\par}
+<ROLE 1 SUMMARY>\par
+\par
+<ROLE 1 SUBSECTIONS AND BULLETS>\par
+\par
+{\b Senior SDE @ Tinkoff AI Center\b0  |  2021\endash 2024\par}
+<ROLE 2 SUMMARY>\par
+\par
+<ROLE 2 BULLETS>\par
+\par
+
+{\fs20\b EDUCATION\b0}\par
+\par
+{\b Masters\b0  \endash  Moscow Institute of Physics and Technology (Honors Diploma) | GPA: 9.6/10 | MSc Applied Mathematics & CS\par}
+{\b Bachelors\b0  \endash  Ural Federal University | GPA: 4.3/5 | BSc Fundamental Informatics & IT\par}
+\par
+
+{\fs20\b CORE EXPERTISE\b0}\par
+\par
+<EXPERTISE TABLE — each row as: {\b Category\b0}: skills, skills, skills \par}
+
+}
+```
+
+RTF formatting rules:
+- `\b text\b0` — bold
+- `\par` — paragraph break (end every paragraph with it)
+- `\endash` — en dash (—)
+- Replace `<...>` placeholders with actual generated content
+- For bullet points use `\bullet  text\par` or prefix with `-  `
+- Subsection headers: `{\b **Subsection**\b0}\par`
+- Save the file as `CV/tailored.rtf`
