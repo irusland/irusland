@@ -122,53 +122,102 @@ After generating all CV content, write it to `CV/generated/[company]/[job-summar
 Use this RTF template (fill in the generated content):
 
 ```
-{\rtf1\ansi\ansicpg1252\deff0
-{\fonttbl{\f0\froman\fcharset0 Times New Roman;}{\f1\fswiss\fcharset0 Arial;}}
-{\colortbl;\red0\green0\blue0;\red80\green80\blue80;}
-\paperw12240\paperh15840\margl1440\margr1440\margt1080\margb1080
-\f1\fs20
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Arial-BoldMT;\f1\fswiss\fcharset0 ArialMT;}
+{\colortbl;\red255\green255\blue255;\red80\green80\blue80;}
+{\*\expandedcolortbl;;\csgenericrgb\c31373\c31373\c31373;}
+\margl1440\margr1440\margb1080\margt1080\vieww22440\viewh18500\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
-{\fs28\b Ruslan Sirazhetdinov\b0}\par
-{\fs18\cf2 <HEADER TAGLINE>\cf0}\par
-{\fs16 irusland@icloud.com | linkedin.com/in/irusland | github.com/irusland}\par
-\par
+\f0\b\fs44 \cf0 Ruslan Sirazhetdinov
+\f1\b0\fs36 \
+\cf2 <HEADER TAGLINE>\cf0 \
 
-{\fs20\b CORE IMPACT\b0}\par
-\par
-<CORE IMPACT BULLETS — one per \par, use \b...\b0 for bold metrics>\par
-\par
+\fs32 irusland@icloud.com | linkedin.com/in/irusland | github.com/irusland
+\fs36 \
+\
 
-{\fs20\b EXPERIENCE\b0}\par
-\par
-{\b Tech Lead @ Aviasales\b0  |  2024\endash Present\par}
-<ROLE 1 SUMMARY>\par
-\par
-<ROLE 1 SUBSECTIONS AND BULLETS>\par
-\par
-{\b Senior SDE @ Tinkoff AI Center\b0  |  2021\endash 2024\par}
-<ROLE 2 SUMMARY>\par
-\par
-<ROLE 2 BULLETS>\par
-\par
+\f0\b CORE IMPACT
+\f1\b0 \
+\
+-  <bullet: use \f0\b bold metric \f1\b0 inline for emphasis>\
+-  <bullet>\
+-  <bullet>\
+-  <bullet>\
+\
 
-{\fs20\b EDUCATION\b0}\par
-\par
-{\b Masters\b0  \endash  Moscow Institute of Physics and Technology (Honors Diploma) | GPA: 9.6/10 | MSc Applied Mathematics & CS\par}
-{\b Bachelors\b0  \endash  Ural Federal University | GPA: 4.3/5 | BSc Fundamental Informatics & IT\par}
-\par
+\f0\b EXPERIENCE
+\f1\b0 \
+\
 
-{\fs20\b CORE EXPERTISE\b0}\par
-\par
-<EXPERTISE TABLE — each row as: {\b Category\b0}: skills, skills, skills \par}
+\f0\b Tech Lead @ Aviasales
+\f1\b0   |  2024\'96Present\
+<ROLE 1 SUMMARY — one line>\
+\
 
+\f0\b <Subsection 1 Name>
+\f1\b0 \
+-  <bullet with \f0\b bold metrics \f1\b0 inline>\
+-  <bullet>\
+\
+
+\f0\b <Subsection 2 Name>
+\f1\b0 \
+-  <bullet>\
+-  <bullet>\
+\
+
+\f0\b Senior SDE @ Tinkoff AI Center
+\f1\b0   |  2021\'962024\
+<ROLE 2 SUMMARY — one line>\
+\
+-  <bullet with \f0\b bold metrics \f1\b0 inline>\
+-  <bullet>\
+-  <bullet>\
+-  <bullet>\
+-  <bullet>\
+-  <bullet>\
+-  <bullet>\
+-  <bullet>\
+\
+
+\f0\b EDUCATION
+\f1\b0 \
+\
+
+\f0\b Masters
+\f1\b0   \'96 Moscow Institute of Physics and Technology (Honors Diploma) | GPA: 9.6/10 | MSc Applied Mathematics & CS\
+
+\f0\b Bachelors
+\f1\b0   \'96 Ural Federal University | GPA: 4.3/5 | BSc Fundamental Informatics & IT\
+\
+
+\f0\b CORE EXPERTISE
+\f1\b0 \
+\
+
+\f0\b <Category 1>
+\f1\b0 :  <skill>, <skill>, <skill>\
+
+\f0\b <Category 2>
+\f1\b0 :  <skill>, <skill>, <skill>\
+
+\f0\b <Category 3>
+\f1\b0 :  <skill>, <skill>, <skill>\
+
+\f0\b <Category 4>
+\f1\b0 :  <skill>, <skill>, <skill>\
 }
 ```
 
 RTF formatting rules:
-- `\b text\b0` — bold
-- `\par` — paragraph break (end every paragraph with it)
-- `\endash` — en dash (—)
+- **Bold**: switch fonts — `\f0\b bold text \f1\b0` (not `{\b...\b0}`)
+- **Line break**: `\` at end of line (not `\par`)
+- **Blank line**: two consecutive `\` lines
+- **En dash**: `\'96`
+- **Gray color** for tagline only: `\cf2 ... \cf0`
+- **Font sizes**: `\fs44` = name (22pt), `\fs36` = body/tagline (18pt), `\fs32` = contact (16pt)
+- **Inline bold within bullet**: `-  text \f0\b metric \f1\b0 more text\`
+- **Subsection headers**: `\f0\b Header Name\` then `\f1\b0 \`
 - Replace `<...>` placeholders with actual generated content
-- For bullet points use `\bullet  text\par` or prefix with `-  `
-- Subsection headers: `{\b **Subsection**\b0}\par`
 - Save the file as `CV/generated/[company]/[job-summary]-[current-date].rtf`
