@@ -40,11 +40,11 @@ Adapt the title and domains to match the vacancy language.
 ---
 
 ### CORE IMPACT
-4 bullets. Short, metric-driven, no fluff. Each bullet = one bold result.
-Format: `- <action verb> <what> <bold metric>`
+4 bullets. Each bullet must be **13–15 words** (count strictly). FAANG-level density — no fluff, no filler.
+Structure: `[Action Verb] + [What you did] + [How] + [Impact/result]`
 Example:
-- Built and scaled AI agent platform used by **400+ users** with **~80% satisfaction**
-- Improved SQL generation accuracy **from 63% to 100%**
+- Improved SQL agent accuracy from 63% to 100% via custom **MCP** server redesign
+- Scaled internal AI assistant to **378 users**, **83 MAU**, and **~80% satisfaction** post-launch
 
 Select the 4 most impressive and relevant metrics from base.md for this vacancy.
 
@@ -101,6 +101,22 @@ Select and reorder based on vacancy priority. Available categories and content f
 - ML Inference & Serving → TorchServe, PyTorch, Triton, KServe, A/B testing
 
 Pick the 4 most relevant categories and trim keywords to match vacancy language.
+
+---
+
+## Bullet Writing Rules (apply to ALL bullets: CORE IMPACT + EXPERIENCE)
+
+Every bullet must meet ALL of the following:
+
+1. **Word count**: 13–15 words exactly (count every word including articles and prepositions)
+2. **Structure**: `[Action Verb] + [What] + [How] + [Impact/metric]`
+3. **First word**: strong action verb — Led, Built, Designed, Improved, Reduced, Scaled, Drove, Architected, Launched, Delivered, Migrated, Optimized, Increased, Resolved, Established
+4. **Measurable impact**: include %, scale, users, latency, cost, time, or count wherever possible
+5. **No filler**: remove "in order to", "successfully", "responsible for", "helped", "worked on"
+6. **No verb repetition**: vary the opening verb across bullets within the same role section
+7. **Single line**: no sub-clauses that wrap into a second sentence
+
+**Count check**: before finalizing each bullet, count its words. If outside 13–15, rewrite until it fits.
 
 ---
 
