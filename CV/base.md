@@ -105,6 +105,37 @@ Quality / Engineering Excellence / Community
 - Continued supporting internal and open technical ecosystems through SDK contributions, Python interviews, mentoring, and engineering education activities.
 - Completed a Master’s degree with honors while combining it with engineering work; thesis research directly informed a production orchestration framework.
 
+Aviasales / Current Role (Principal SDE, 2024—Present)
+- Led end-to-end architecture and evolution of a large-scale ML Platform enabling training, inference, and monitoring across multiple frameworks: time series forecasting, classification, scoring, recommender, and dialogue systems.
+- Served as technical leader of a team of 4 developers, architecting and building a production-grade multi-agent RAG system that accelerated AI feature delivery and expanded model coverage across product lines.
+- Optimized the ML Platform's configuration engine, cutting time-to-market for new models by 50% and reducing operational overhead.
+- Drove cross-functional alignment between engineering and business teams, translating system reliability and performance improvements into measurable gains in forecast accuracy, conversion rate, and user engagement.
+- Conducted seminars to build organization-wide awareness and adoption of agentic principles, driving consistency and interoperability across ML services.
+
+AI Center / Dialogue Systems (Senior SDE, 2021—2024)
+- Investigated and eliminated HTTP protocol errors affecting 10,000 client dialogues weekly.
+- Updated legacy ML inference infrastructure to increase model-serving capacity 2x using the same hardware resources.
+- Mentored 2 entry-level engineers to mid-level specialists through hands-on guidance and technical coaching.
+- Completed bachelor's and master's degrees with honors while working full-time as a software engineer.
+
+Education
+- Masters, Moscow Institute of Physics and Technology — Honors Diploma, GPA 9.6/10. Courses: ML, DL, NLP, RL, RecSys, BigData, SDE, SRE. Thesis: development of scenarios for industrial-scale dialogue systems.
+- Bachelors, Ural Federal University — GPA 4.3/5. Courses: Algorithms & Data Structures, Operating Systems, Industrial-scale Development, Computer Vision, Assembly, Microcontrollers. Thesis: application of pseudo-labeled data to semantic segmentation of buildings in aerial photographs.
+
+Activities / Open Source
+- invest-python: developed an open-source Python SDK for Tinkoff Investments (gRPC interface layer contribution).
+- bacapibara: built a dialog system API with microservice architecture and model inference backend.
+- httpserver: implemented an HTTP server according to specification over raw TCP sockets.
+- stonks: researched the influence of financial news on stock quotes using reinforcement learning.
+- Conducted seminars on ML course for MIPT master's students at TBank Academy.
+- Conducted Python engineering interviews at TBank.
+- Presented at showreel days (TBank / MIPT).
+
+Personal
+- Professional sailing athlete.
+- Snowkite freestyle world champion.
+- Fluent English, C1 level.
+
 ⸻
 
 Core metrics to keep in the CV
@@ -127,6 +158,12 @@ Core metrics to keep in the CV
 - 164 business metrics
 - 4 teams onboarded
 - Master’s degree with honors
+- 50% reduction in model time-to-market (Aviasales)
+- Team of 4 developers led (Aviasales)
+- 10,000 client dialogues/week affected by HTTP errors — fixed
+- 2x ML inference capacity on same hardware
+- 2 engineers mentored to mid-level
+- GPA 9.6/10 (MIPT), GPA 4.3/5 (UFU)
 
 ⸻
 
@@ -139,18 +176,37 @@ Tech stack / keywords confirmed by experience
 - LLM Integrations
 - Agentic Systems
 - MCP
+- A2A
 - NLP Systems
 - RAG / Knowledge Systems
 - SQL Agents
 - gRPC
 - Kafka
+- FastAPI
+- Pydantic
+- LangGraph
+- MLFlow
 - GitLab CI/CD
+- Jenkins
 - Docker
 - Pants
+- K8S
+- AWS
+- Google Cloud
+- Postgres
+- Redis
+- Elasticsearch
+- Kafka
+- MapReduce / Hadoop
+- PySpark
+- dbt
+- Airflow
 - TorchServe
 - PyTorch
+- Triton
+- KServe
 - Dependency Injection
-- Monitoring / Alerting / Logging
+- Monitoring / Alerting / Logging (Prometheus / Grafana)
 - AB Testing
 - High-load Systems
 - Fault-tolerant Systems
@@ -160,12 +216,14 @@ Tech stack / keywords confirmed by experience
 - RFC / ADR
 - Production ML / NLP Services
 - Full-text Search / Normalization Pipelines
+- OSI Model / Wireshark
+- C# / Java / Swift / C++ / Assembly
 
 ⸻
 
 Super-short “top 15” version
 - Led end-to-end delivery of backend, AI, and ML platform products, from requirements and architecture to production rollout, monitoring, documentation, and post-launch evolution.
-- Acted as a de facto Tech Lead on strategic initiatives, combining hands-on engineering with architecture ownership, cross-team coordination, and delivery responsibility.
+- Owned Tech Lead responsibilities on strategic initiatives, combining hands-on engineering with architecture ownership, cross-team coordination, and delivery responsibility.
 - Delivered production infrastructure for the company’s first GPT hackathon, enabling stable operation for 120 teams and 2,000+ employees.
 - Built AI services designed to support 2,000 voice interactions/day and 5,000 chat interactions/day, with SLA-oriented design, monitoring, and diagnostics.
 - Increased automated test coverage in a production project from 0% to 77%.
