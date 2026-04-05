@@ -104,6 +104,16 @@ Pick the 4 most relevant categories and trim keywords to match vacancy language.
 
 ---
 
+### KEYWORDS
+One paragraph of ATS-friendly comma-separated keywords. Pull from:
+- Exact terms used in the vacancy (mirror their language)
+- Relevant tech stack from base.md that matches the role domain
+- Key patterns and methodologies (e.g. Infrastructure-as-Code, Event-Driven Architecture, Fault Tolerance)
+
+Do not repeat keywords already prominent in CORE EXPERTISE — add complementary terms that cover the full vocabulary of the vacancy.
+
+---
+
 ## Bullet Writing Rules (apply to ALL bullets: CORE IMPACT + EXPERIENCE)
 
 Every bullet must meet ALL of the following:
@@ -223,6 +233,12 @@ Use this RTF template (fill in the generated content):
 
 \f0\b <Category 4>
 \f1\b0 :  <skill>, <skill>, <skill>\
+\
+
+\f0\b KEYWORDS
+\f1\b0 \
+\
+<keyword>, <keyword>, <keyword>, <keyword>, <keyword>, <keyword>, <keyword>, <keyword>, <keyword>, <keyword>, <keyword>, <keyword>, <keyword>, <keyword>, <keyword>, <keyword>, <keyword>, <keyword>, <keyword>, <keyword>\
 }
 ```
 
